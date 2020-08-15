@@ -442,7 +442,10 @@ footer{
 
 .footer-content{
 	overflow: hidden;
+	justify-content: center;
+	align-items: center;
 }
+
 
 .footer-content h4{
 	font-size: 1.9rem;
@@ -458,7 +461,9 @@ footer{
 
 .footer-content-about{
 	margin-bottom: 5.4rem;
+	max-width: 500px;
 }
+
 
 .footer-content-about p{
 	line-height: 2;
@@ -503,25 +508,24 @@ footer{
 	color: var(--main-font-color-dark);
 	cursor: pointer;
 	font-size: 1.6rem;
-	padding: 1px .6rem;
+	padding: 1px .8rem;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	margin-left: 19.5rem;
+	margin-left: 21rem;
 	font-size: 210%;
 }
 
 
 /* Media queries */
 
-
-@media screen and (min-width: 900px){
+@media (min-width: 900px){
 	section{
 		padding: 7.9rem;
 	}
-
+	
 	.logo{
-		margin-left: -5rem;
+		margin-left: -3rem;
 	}
 
 	.menu-toggle{
@@ -621,20 +625,30 @@ footer{
 	.social-media,
 	.newsletter-font{
 		width: 100%;
-		max-width: 27.3rem;
+		max-width: 30rem;
 		margin: 0 1rem;
 	}
 
 	.social-icons i{
 		opacity: 1;
+		font-size: 300%;
+	}
+
+	.newsletter-input{
+	width: 100%;
+	width: 95rem;
+	/* max-width: 5rem; */
+	padding: 1rem;
+	border-radius: .4rem;
 	}
 
 	.newsletter-btn{
-	margin-left: 15.5rem;
-	font-size: 170%;
-}
+	margin-left: 19.5rem;
+	font-size: 250%;
+	}
 
 }
+
 
 
 
