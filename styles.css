@@ -514,6 +514,7 @@ footer{
 	transform: translateY(-50%);
 	margin-left: 21rem;
 	font-size: 210%;
+	z-index: 100;
 }
 
 
