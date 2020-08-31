@@ -1,0 +1,158 @@
+.discover-our-story .btn{
+    color: #C19D60;
+}
+cover-our-story .asterisk{
+    color: #C19D60;
+}
+.meetup .heading{
+    text-align: center;
+}
+
+.meetup .heading h3{
+    font-size: 20px;
+    color: #C19D60;
+}
+
+.meetup .heading h1{
+    font-size: 32px;
+    color: rgba(0,0,0,.7);
+}
+.meetup .heading .asterisk{
+    color: #C19D60;
+}
+
+.about-wrap  {
+    z-index:10;
+    display: flex;
+}
+.team-box {
+    float:left;
+    width:100%;
+    margin: 75px 15px 75px 15px;
+
+}
+.team-photo {
+    overflow:hidden;
+    position:relative;
+}
+.team-photo:before  , .team-photo:after{
+    content:'';
+    position:absolute;
+    width:40px;
+    height:40px;
+    z-index:20;
+}
+.team-photo:before{
+    top:20px;
+    left:20px;
+    border-left:1px dotted;
+    border-top:1px dotted;
+}
+.team-photo:after{
+    bottom:20px;
+    right:20px;
+    border-right:1px dotted;
+    border-bottom:1px dotted;
+}
+.team-info {
+    border:1px solid #eee;
+    padding:25px 30px 40px;
+    border-top:none;
+    background:#fff;
+    text-align: center;
+}
+.team-photo .overlay {
+    opacity:0;
+    transition: all .2s ease-in-out;
+}
+.team-photo:hover .overlay {
+    opacity:0.5;
+}
+.team-info h3  {
+    display:block;
+    padding-bottom:10px;
+    font-weight:600;
+    font-size:18px;
+    color:#000;
+    text-align: center;
+    font-family: 'Playfair Display', cursive;
+}
+.team-info h4 {
+    font-size:15px;
+    color: #C19D60;
+}
+.team-info p{
+    margin-top:20px;
+}
+.team-social {
+    position:absolute;
+    top:50%;
+    height:40px;
+    left:20px;
+    right:20px;
+    opacity:0;
+    line-height:40px;
+    margin-top:-20px;
+    z-index:5;
+    transition: all .3s ease-in-out;
+    padding:0 10px;
+}
+.ts_title {
+    position:absolute;
+    top:-50px;
+    left:0;
+    right:0;
+    font-family: 'Playfair Display', cursive;
+    font-size:16px;
+    color:#fff;
+    font-weight:700;
+}
+.team-photo:hover .team-social{
+    opacity:1;
+}
+.team-info:after {
+    position: absolute;
+    content: '\25CF\25CF\25CF';
+    width: 50px;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -25px;
+    font-size: 6px;
+    letter-spacing: 4px;
+}
+.team-social li {
+    display:inline-block;
+    margin:0;
+}
+.team-social li a {
+    float:left;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    background:rgba(0,0,0,0.6);
+    color:#fff;
+    border-radius:100%;
+}
+.team-social li a:hover {
+    color:#fff;
+}
+.team-dec {
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:26px;
+    color: #ADC7DD;
+}
+/*Media Queries*/
+
+@media (max-width: 576px) {
+    img{
+        width: 95%;
+    }
+    .about-wrap{
+        display: grid;
+    }
+    .team-box{
+        margin: 25px 10px 25px 10px;
+    }
+}
