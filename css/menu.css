@@ -1,0 +1,197 @@
+.menu{
+    width: 100%;
+    height: 100vh;
+    /*background: url('../img/menu.jpg') center no-repeat;*/
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    background-image: url('../img/menu.jpg');
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+
+    -webkit-filter: blur(2px);
+    /*-moz-filter: blur(2px);*/
+    /*-o-filter: blur(2px);*/
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.vegetarian{
+    background-image: url('../img/marble.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+
+.menu-hedline{
+    text-align: center;
+}
+
+
+.food-type h3{
+    font-size: 40px;
+}
+.food-type{
+    font-family: 'Indie Flower', cursive;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.veg{
+    margin-top: 30px;
+}
+.non-veg{
+    margin-top: 40px;
+}
+
+.circleimg{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.food-text{
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.food-title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.food-price{
+    margin-top: 15px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 200;
+    margin-left: -30px
+}
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+
+    .food-type h3{
+        margin-left: -30px;
+        font-size: 35px;
+    }
+
+    .circleimg{
+        height: 80px;
+        width: 100px;
+        margin-left: -60px;
+        border-radius: 50%;
+    }
+    .food-name{
+        margin-top: 15px;
+        margin-left: -50px;
+        font-size: 20px;
+    }
+
+    .food-price{
+        font-size: 20px;
+        margin-left: -5px;
+    }
+    .right-wing .circleimg{
+        margin-left: 0px;
+    }
+    .right-wing .food-name{
+        margin-top: 15px;
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    .right-wing .food-price{
+        margin-left: 0;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .food-type h3{
+        margin-left: 0px;
+        font-size: 35px;
+    }
+
+    .circleimg{
+        height: 80px;
+        width: 100px;
+        margin-left: 0px;
+        border-radius: 50%;
+    }
+    .food-name{
+        margin-top: 5px;
+        margin-left: 0px;
+        font-size: 5px;
+    }
+
+    .food-price{
+        font-size: 20px;
+        margin-left: -5px;
+    }
+    .right-wing .circleimg{
+        margin-left: 0px;
+    }
+    .right-wing .food-name{
+        margin-top: 15px;
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    .right-wing .food-price{
+        margin-left: 0;
+    }
+
+}
+
+ @media (max-width: 576px) {
+
+
+.food-type h3{
+    font-size: 35px;
+}
+
+.circleimg{
+    height: 80px;
+    width: 100px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.food-text{
+    margin-left: 5px;
+
+    
+}
+.food-title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.food-price{
+    font-size: 20px;
+    margin-left: -5px;    
+}
+
+}
+
+@media (min-width: 900px){
+
+
+}
