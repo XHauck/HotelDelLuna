@@ -178,6 +178,21 @@ header{
 	justify-content: center;
 	text-align: center;
 }
+	.brush-dec{
+		position:absolute;
+		left:0;
+		z-index:20;
+		height:50px;
+		width:100%;
+		background-size: cover;
+		background-attachment: scroll;
+		background-position: center;
+		background-repeat: repeat;
+		/*background-origin: content-box;*/
+		bottom:-10px;
+		background:url(../img/bg/brush-dec.png);
+	}
+
 
 .sub-headline{
 	font-size: 8.5rem;

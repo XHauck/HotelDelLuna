@@ -30,7 +30,7 @@
 }
 
 .vegetarian{
-    background-image: url('../img/marble.png');
+    /*background-image: url('../img/marble.png');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
