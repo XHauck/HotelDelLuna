@@ -186,7 +186,7 @@ input,select{
 
 @media (max-width: 576px) {
     .brush-dec{
-        bottom: -20px;
+        bottom: -50px;
     }
     .reservation{
         display: grid;
