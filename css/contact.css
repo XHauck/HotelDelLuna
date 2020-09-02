@@ -17,176 +17,262 @@
 .brush-dec{
     position:absolute;
     left:0;
-    z-index:20;
+    z-index:-1;
     height:50px;
     width:100%;
     background-size: cover;
     background-attachment: scroll;
     background-position: center;
     background-repeat: repeat;
-    /*background-origin: content-box;*/
     bottom:-10px;
     background:url(../img/bg/brush-dec.png);
 }
+.contact-section{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
 
 .contact{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    height: 500px;
-    color: #fff;
-    letter-spacing: 1px;
-    background-color: #fafafa;
-    margin: 100px 50px 200px 50px;
-    box-shadow: 10px 15px 20px rgba(0,0,0,.1);
+    position: relative;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 50px 0;
 }
 
-
-.container-form .heading{
-    color: rgba(0,0,0,.8);
+.contact-form{
+    grid-column: span 6;
+    /*position: absolute;*/
 }
-.container-form p{
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-.container-form .separate{
+.contact-form h2{
+    color: rgba(0,0,0,1);
     font-size: 30px;
-    letter-spacing: 0px;
-    margin-top: 1px;
-    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: var(--body-font);
+    letter-spacing: 1px;
 }
-.contact .heading{
-    font-size: 35px;
+.contact-form p{
+    color: rgba(0,0,0,.8);
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.contact-form .formbox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.inputBox{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+.w50{
+    width: 47%;
+}
+.w100{
+    width: 100%;
+}
+.formbox .inputBox input,textarea{
+    width: 100% !important;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #C19D60;
+    outline: none;
+}
+.formbox .inputBox textarea{
+    min-height: 120px;
+    font-weight: 600;
+}
+
+.formbox .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    transition: 0.3s;
+    pointer-events: none;
 
 }
-.container-time .heading{
-    text-transform: uppercase;
+
+.formbox .inputBox input:focus ~ span,
+.formbox .inputBox textarea:focus ~ span,
+.formbox .inputBox input:valid ~ span,
+.formbox .inputBox textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #C19D60;
 }
-.container-time{
-    background-color: rgba( 0,0,0,.95);
-    padding: 50px;
-    outline: 3px dashed #998100;
-    outline-offset: -30px;
+.formbox .inputBox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+    border-radius: 20px;
+}
+.formbox .inputBox input[type="submit"]:hover{
+    color: #C19D60;
+    transition: .5s;
+
+}
+.reservation-time{
+    grid-column: span 6;
+    margin-left: 100px;
+}
+.reservation-time .outer{
+    height: 500px;
+    width: 450px;
+    background-color: rgb(54,57,61);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.reservation-time .inner{
+    position: relative;
+    height: 450px;
+    width: 400px;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color: rgb(38,40,43);
+    border: 1px dashed rgb(83,85,89);
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
-
-.contact .heading-days{
-    margin: 20px 0;
+.reservation-time .outer .inner h2{
+    color: #C19D60;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.reservation-time .outer .inner h1{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 15px;
+}
+.reservation-time .outer .inner p{
     color: #C19D60;
     font-size: 30px;
-}
-.reservation hr{
-    margin: 15px;
-    border-bottom: 2px solid #fff;
-}
-.contact .heading-phone{
-    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 
-.container-form{
-    padding: 20px 0;
-    margin: 0 auto;
-    color: #000;
-}
-.container-form .heading{
-    text-align: left;
-}
-.container-form form{
+.reservation-time .outer .inner .days{
     display: grid;
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 50px;
 }
-
-
-input,select{
-    padding: 10px 15px;
-    color: #000000;
+.reservation-time .outer .inner .days h3{
+    color: #C19D60;
+    font-size: 15px;
+    font-weight: 300;
 }
-
-.botton{
-    background-color: rgba(0,0,0,.95);
+.reservation-time .outer .inner .days .MtF{
+    grid-column: span 6;
+}
+.reservation-time .outer .inner .days .StS{
+    grid-column: span 6;
+}
+.reservation-time .outer .inner .days .StS p{
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    font-size: 18px;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    box-shadow: 7px 10px 12px rgba(0,0,0,.1);
-    transition: color 1s;
+    font-size: 30px;
+}
+.reservation-time .outer .inner .days .MtF p{
+    color: #fff;
+    font-size: 30px;
+}
+.reservation-time .outer .inner .separator{
+    margin-top: 30px;
+}
+.reservation-time .outer .inner .separator .line,.asterisk{
+    animation: none;
+    opacity: 1;
+}
+.reservation-time .outer .inner .phone{
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 35px;
+    border: 1px solid #C19D60;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 600;
 }
 
-.botton:hover{
-    color: #998100;
-}
 
 /*Media Quries*/
 
 @media (max-width: 1024px) {
     .contact{
-        margin: 100px 50px 50px 50px;
+        margin-left: -40px;
     }
-    .container-form input{
-        border: none;
-        background-color: rgba(0,0,0,0.1);
+    .contact-form{
+        margin-left: 30px;
     }
-    .container-form select{
-        border: none;
-        background-color: rgba(0,0,0,0.1);
+    .reservation-time{
+        margin-left: 35px;
     }
 }
 
 @media (max-width: 768px) {
     .contact{
-        margin: 50px 0px 100px 0px;
+        margin-left: -5px;
+        margin-bottom: 600px;
     }
-    .container-time .heading{
-        font-size: 30px;
+    .contact-form{
+        grid-column: span 12;
     }
-    .container .heading-days{
-        font-size: 20px;
-    }
-    .container-time p{
-        font-size: 15px;
-    }
-    .container-form p{
-        font-size: 25px;
-    }
-    .container-form input{
-        border: none;
-        background-color: rgba(0,0,0,0.1);
-    }
-    .container-form select{
-        border: none;
-        background-color: rgba(0,0,0,0.1);
-        outline: none;
+    .reservation-time{
+        grid-column: span 12;
+        margin-left: 150px;
+        margin-top: 50px;
     }
 }
 
 @media (max-width: 576px) {
-    .contact{
-        display: grid;
-        grid-template-columns: 100%;
+    .contact-form{
+        grid-column: span 12;
     }
-    .container-form{
+    .reservation-time{
+        grid-column: span 12;
+        margin-left: 0px;
         margin-top: 50px;
     }
-    .container-form .heading{
-        font-size: 27px;
+    .reservation-time .outer{
+        height: 550px;
+        width: 350px;
+        margin-left: -6px;
     }
-    .container-form .form-field{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .container-form form p{
-        font-size: 15px;
-        margin-top: 7px;
-        margin-right: 25px;
-    }
-    .container-form form input,select{
-        font-size: 10px;
-        margin-right: -10px;
+    .reservation-time .inner{
+        position: relative;
+        height: 500px;
+        width: 300px;
+        margin-left: 25px;
+        margin-top: 25px;
     }
 
+    .reservation-time .outer .inner .phone{
+
+        font-size: 30px;
+        padding: 10px 15px;
+    }
 
 }
