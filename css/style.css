@@ -191,6 +191,7 @@ header{
 		/*background-origin: content-box;*/
 		bottom:-10px;
 		background:url(../img/bg/brush-dec.png);
+                z-index:100;
 	}
 
 
