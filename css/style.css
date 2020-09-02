@@ -708,6 +708,11 @@ input:focus {
 
 }
 
+@media (max-width: 576px) {
+.brush-dec{
+        bottom: -65px;
+    }
+}
 
 
 
