@@ -191,7 +191,7 @@ header{
 		/*background-origin: content-box;*/
 		bottom:-10px;
 		background:url(../img/bg/brush-dec.png);
-                z-index:1;
+                z-index:-1;
 	}
 
 
@@ -712,7 +712,7 @@ input:focus {
 @media (max-width: 576px) {
 .brush-dec{
         bottom: -65px;
-        z-index:1
+        z-index:-1;
     }
 }
 
