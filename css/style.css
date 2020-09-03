@@ -576,6 +576,11 @@ input:focus {
 
 
 /* Media queries */
+@media(max-width: 578px){
+	.hero{
+		height: 90vh
+	}
+}
 
 @media (min-width: 900px){
 	section{
