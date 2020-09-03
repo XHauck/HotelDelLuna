@@ -176,6 +176,9 @@ cover-our-story .asterisk{
 /*Media Queries*/
 
 @media (max-width: 576px) {
+    .brush-dec{
+        bottom: -65px;
+    }
     img{
         width: 95%;
     }

@@ -161,7 +161,9 @@
 }
 
  @media (max-width: 576px) {
-
+.brush-dec{
+        bottom: -65px;
+    }
 
 .food-type h3{
     font-size: 35px;

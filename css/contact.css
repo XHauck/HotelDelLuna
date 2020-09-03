@@ -248,6 +248,9 @@
 }
 
 @media (max-width: 576px) {
+    .brush-dec{
+        bottom: -65px;
+    }
     .contact-form{
         grid-column: span 12;
     }
